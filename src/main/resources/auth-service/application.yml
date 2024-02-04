@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    username: root
+    url: jdbc:mysql://authdb5:3309/springsecurity
+    password: password
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+
+outing:
+  app:
+    reset-uri: http://localhost:4200/#/user/reset-password/user/{userId}/reset/{resetId}
